@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.flex-container {
+  display: flex;
+  background-color: lavender;
+flex-direction: row;
+}
+
+.flex-container > div {
+  background-color: paleturquoise;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: lavender;
+}
+
+.flex-container > div {
+  background-color: paleturquoise;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
