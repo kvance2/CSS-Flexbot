@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+*
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -9,33 +10,47 @@ header{
 	width:100%;
 	text-align:center;
 }
-.flex-container > nav {
-display:flex;
-flex-direction:row;
-  background-color: paleturquoise;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
+.flex-container {
+	display:flex;
+	background-color: lavender;
+	flex-direction:row;
+	align-items:stretch;
 }
-.container {
-	width:600px;
-	margin: 0 auto;
+.flex-container > div {
+	background-color:paleturquoise;
+		margin:10px;
+		padding:20px;
+		font-size:30px;
 	
 }
-.flex-container {
-  display: flex;
-  background-color: lavender;
+
+.container-1{
+	display:flex;
+	background-color:paleturquoise;
+	flex-direction:column;
+	align-items:stretch
+}
+.container-1 div{
+	border:dashed;
+	padding:10px	
+}
+.item-1{
+	flex:1;
+}
+.item-2 {
+	flex:1;
+}
+.item-3 {
+	flex:1;
 }
 
-.flex-container > div {
-  background-color: paleturquoise;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
 footer{
 	width:100%;
 	text-align:center;
+}
+/*Responsive layout - makes one-column layout instead of two-column layout*/
+@media(max-width : 800px ){
+	.flex-container {
+		flex-direction:column;
+	}
 }
