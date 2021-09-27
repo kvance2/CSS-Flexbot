@@ -1,22 +1,29 @@
 @charset "UTF-8";
 /* CSS Document */
-
-.flex-container {
-  display: flex;
-  background-color: lavender;
-flex-direction: row;
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: aliceblue;
 }
-
-.flex-container > div {
+header{
+	width:100%;
+	text-align:center;
+}
+.flex-container > nav {
+display:flex;
+flex-direction:row;
   background-color: paleturquoise;
   margin: 10px;
   padding: 20px;
   font-size: 30px;
 }
-
+.container {
+	width:600px;
+	margin: 0 auto;
+	
+}
 .flex-container {
   display: flex;
-  flex-direction: column;
   background-color: lavender;
 }
 
@@ -28,4 +35,7 @@ flex-direction: row;
   line-height: 75px;
   font-size: 30px;
 }
-
+footer{
+	width:100%;
+	text-align:center;
+}
